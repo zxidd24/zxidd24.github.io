@@ -1,9 +1,9 @@
-# Tomotoes-HomePage
+# SimonAKing-HomePage
 
 
-[![支付宝赞助按钮](https://camo.githubusercontent.com/f4874996db5ac421925db08778d800d76d36abbc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545362539342541462545342542422539382545352541452539442d25453525393025393154412545362538442539302545352538412541392d677265656e2e737667)](https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/alipay.png)
+[![支付宝赞助按钮](https://camo.githubusercontent.com/f4874996db5ac421925db08778d800d76d36abbc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545362539342541462545342542422539382545352541452539442d25453525393025393154412545362538442539302545352538412541392d677265656e2e737667)](https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/alipay.png)
 
-[![微信赞助按钮](https://camo.githubusercontent.com/26101aa838286ad0d45a6f71b25fdc6e14e7668c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545352542452541452545342542462541312d25453525393025393154412545362538442539302545352538412541392d677265656e2e737667)](https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/wechat.png)
+[![微信赞助按钮](https://camo.githubusercontent.com/26101aa838286ad0d45a6f71b25fdc6e14e7668c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2545352542452541452545342542462541312d25453525393025393154412545362538442539302545352538412541392d677265656e2e737667)](https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/wechat.png)
 
 [English Version](<README.md>)
 
@@ -11,7 +11,7 @@
 
 ## 项目简介
 
-> `一个坏掉的番茄` 的主页
+> `SimonAKing` 的主页
 
 [在线浏览](http://tomotoes.com)
 
@@ -31,7 +31,7 @@
 ## 安装步骤
 
 ```sh
-git clone https://github.com/Tomotoes/HomePage.git
+git clone https://github.com/SimonAKing/HomePage.git
 cd HomePage
 npm install
 npm run dev
@@ -73,8 +73,8 @@ npm run dev
 ```json
 {
 	"head": {
-		"title": "一个坏掉的番茄",
-		"description": "Author:SimonMa,Category:Personal Blog",
+		"title": "SimonAKing",
+		"description": "Category:Personal Blog",
 		"favicon": "favicon.ico"
 	}
 }
@@ -105,7 +105,7 @@ head
 
 所有的支持项如下：
 
-1. 会在首页右上角显示 `章鱼猫` 
+1. 会在首页右上角显示 `章鱼猫`
 2. 控制台会打印作者的站点信息
 
 如需关闭，请设置`intro.supportAuthor: false`。
@@ -116,7 +116,7 @@ head
 替换步骤如下:
 
 1. 请选择好你的图标，添加到项目后，把颜色全部调成白色。
-2. 点击 Font Class 方式 
+2. 点击 Font Class 方式
 3. 复制生成的链接中的内容
 4. 替换 文件 `css/common/icon.scss` 中的内容 ，其中 `icon` 选择器中的内容必须保留。
 5. 配置 `config.json` 文件中的相应项 `main.ul.*.icon`
@@ -150,7 +150,7 @@ head
 
 2. ```sh
    cd dist
-   git init 
+   git init
    git add -A
    git commit -am"init"
    git remote add origin https://github.com/你的用户名/你的用户名.github.io.git
@@ -161,7 +161,7 @@ head
 
 4. 访问 `你的用户名.github.io` 即可浏览啦！
 
-   
+
 
 假如你之前的`用户名.github.io`仓库已经有内容了,可以新建另一个的仓库，比如`blog`。
 
