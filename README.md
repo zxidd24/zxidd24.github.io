@@ -3,7 +3,6 @@
 [中文版说明](<README.zh_CN.md>)
 
 
-
 ## Introduction
 
 > `SimonAKing`  home page.
@@ -14,15 +13,6 @@ Do you want to install such a cool homepage for your website?
 
 Let's start now!
 
-
-
-## Prerequisites
-
-- Nodejs 6.0 above
-- Git available
-
-
-
 ## Install
 
 ```sh
@@ -31,8 +21,6 @@ cd HomePage
 npm install
 npm run dev
 ```
-
-
 
 ## Features
 
@@ -175,8 +163,3 @@ I spent a lot of time and energy to develop this project.
 If this project has brought you help, welcome to sponsor, `star`.
 
 Thank you!
-
-
-
-## License
-The Project is released under the ` LGPL-3.0` license.
