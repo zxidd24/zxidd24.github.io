@@ -43,7 +43,7 @@ npm run dev
 
 1. 高度封装了页面中的所有的信息
 2. 使用 [WebGL-Fluid-Simulation](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/) 作为背景
-3. 使用 `scss` 作为 `css` 预处理器
+3. 使用 `less` 作为 `css` 预处理器
 4. 使用 `pug` 作为 `html` 预处理器
 5. 使用 `gulp` 作为构建工具, 并以配置好构建脚本
 6. 令人舒服的动画 , 以及漂亮的 `UI`
@@ -118,7 +118,7 @@ head
 1. 请选择好你的图标，添加到项目后，把颜色全部调成白色。
 2. 点击 Font Class 方式
 3. 复制生成的链接中的内容
-4. 替换 文件 `css/common/icon.scss` 中的内容 ，其中 `icon` 选择器中的内容必须保留。
+4. 替换 文件 `css/common/icon.less` 中的内容 ，其中 `icon` 选择器中的内容必须保留。
 5. 配置 `config.json` 文件中的相应项 `main.ul.*.icon`
 
 ```css

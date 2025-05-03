@@ -43,7 +43,7 @@ npm run dev
 
 1. Highly encapsulates all the information in the page
 2. Use [WebGL-Fluid-Simulation](https://github.com/PavelDoGreat/WebGL-Fluid-Simulation/) as background
-3. Use `scss` as `css` preprocessor
+3. Use `less` as `css` preprocessor
 4. Use `pug` as `html` preprocessor
 5. Use `gulp` as a build tool and configure the build script
 6. Comfortable animation and beautiful UI
@@ -119,7 +119,7 @@ The replacement steps are as follows:
 1. Please select your icon, add it to the project, and change the color to white.
 2. Click Font Class method
 3. Copy the contents of the generated link
-4. Replace the contents of the file `/src/css/common/icon.scss`, where the contents of the `icon` selector must be preserved.
+4. Replace the contents of the file `/src/css/common/icon.less`, where the contents of the `icon` selector must be preserved.
 5. Config.json the corresponding item in the `config.json`file`main.ul. * .icon`
 
 ```css
