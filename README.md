@@ -4,7 +4,7 @@
 
 ## Introduction
 
-> `SimonAKing`  home page.
+> A modern and elegant personal homepage with fluid animation background, responsive design and smooth page transitions.
 
 ![preview](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMncyb3oyc21zc3czejU3cGk4M2tiNTdkaTM0N3FodGVpZmU5azNxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fhXFCZEogq39rOpKUi/giphy.gif)
 
@@ -35,7 +35,6 @@ npm run dev
 8. The referenced `css` and`js` files do not exceed `18.5` kb in total!
 9. Delayed response switch page event
 10. There are many features left for you to explore...
-
 
 
 ## Structure
