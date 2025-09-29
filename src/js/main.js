@@ -594,6 +594,11 @@ function switchPage() {
 	if (switchPage.switched) {
 		return;
 	}
+	// 保存初始 path，以便能够在切换回第一页时恢复
+	const maybePath = $(".shape-wrap path");
+	if (maybePath && !switchPage.originalPath) {
+		switchPage.originalPath = maybePath.getAttribute("d");
+	}
 	const DOM = {
 		intro: $(".content-intro"),
 		path: $(".shape-wrap path"),
@@ -681,6 +686,43 @@ function loadAll() {
 	loadAll.loaded = true;
 }
 
+// 将第二页返回到第一页的反向切换
+function reverseSwitchPage() {
+	if (!switchPage.switched) {
+		return;
+	}
+	const DOM = {
+		intro: $(".content-intro"),
+		path: $(".shape-wrap path"),
+		shape: $("svg.shape"),
+	};
+
+	// 如果保存了 originalPath，就恢复，否则尝试从 pathdata:id
+	const restorePath = switchPage.originalPath || DOM.path.getAttribute("pathdata:id");
+
+	// 反向动画：将 intro 从 -200vh 恢复到 0
+	anime({
+		targets: DOM.intro,
+		duration: 900,
+		easing: "easeInOutSine",
+		translateY: "0",
+	});
+
+	// 恢复 shape path
+	anime({
+		targets: DOM.path,
+		duration: 900,
+		easing: "easeOutQuad",
+		d: restorePath,
+		begin: function () {
+			// 确保 svg 的 transform 起点
+			DOM.shape.style.transformOrigin = "50% 0%";
+		},
+	});
+
+	switchPage.switched = false;
+}
+
 window.visibilityChangeEvent = hiddenProperty.replace(
 	/hidden/i,
 	"visibilitychange"
@@ -716,6 +758,47 @@ if (isPhone) {
 				return;
 			}
 			loadAll();
+		},
+		{ passive: true }
+	);
+}
+
+// 非手机设备监听 wheel 事件，用于在第二页时滚轮返回第一页
+window.addEventListener(
+	"wheel",
+	function (e) {
+		try {
+			// 当已切换到第二页且向上滚动（deltaY < 0）时返回第一页
+			if (switchPage && switchPage.switched && e.deltaY < 0) {
+				reverseSwitchPage();
+			}
+		} catch (err) {
+			// ignore
+		}
+	},
+	{ passive: true }
+);
+
+// 在移动端，监听 touchstart/touchend，若在第二页并向下滑动则返回第一页
+if (isPhone) {
+	document.addEventListener(
+		"touchstart",
+		function (e) {
+			window._rev_startx = e.touches[0].pageX;
+			window._rev_starty = e.touches[0].pageY;
+		},
+		{ passive: true }
+	);
+	document.addEventListener(
+		"touchend",
+		function (e) {
+			if (!switchPage || !switchPage.switched) return;
+			const endx = e.changedTouches[0].pageX;
+			const endy = e.changedTouches[0].pageY;
+			// 手指向下滑动：endy - starty > 30
+			if (typeof window._rev_starty !== "undefined" && endy - window._rev_starty > 30) {
+				reverseSwitchPage();
+			}
 		},
 		{ passive: true }
 	);
