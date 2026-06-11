@@ -1,3 +1,5 @@
+## 更新脚本 执行 ./deploy.sh 即可部署到 GitHub Pages
+
 #!/usr/bin/env bash
 set -euo pipefail
 
