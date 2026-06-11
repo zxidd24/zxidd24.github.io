@@ -1,4 +1,4 @@
-# SimonAKing-HomePage
+# ZZX-HomePage
 
 [English Version](<README.md>)
 
@@ -9,7 +9,7 @@
 
 ![preview](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMncyb3oyc21zc3czejU3cGk4M2tiNTdkaTM0N3FodGVpZmU5azNxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fhXFCZEogq39rOpKUi/giphy.gif)
 
-[在线浏览](http://simonaking.com)
+[在线浏览](http://ZZX.com)
 
 嗯哼，你想为网站装上如此酷炫的主页吗?
 
@@ -19,7 +19,7 @@
 ## 安装步骤
 
 ```sh
-git clone https://github.com/SimonAKing/HomePage.git
+git clone https://github.com/zxidd24.git
 cd HomePage
 npm install
 npm run dev
@@ -61,7 +61,7 @@ npm run dev
 ```json
 {
 	"head": {
-		"title": "SimonAKing",
+		"title": "ZZX",
 		"description": "Category:Personal Blog",
 		"favicon": "favicon.ico"
 	}

@@ -1,18 +1,18 @@
 {
 	"head": {
-		"title": "SimonAKing",
-		"description": "Author:SimonAKing,Category:Personal Blog",
+		"title": "ZZX",
+		"description": "Author:ZZX,Category:Personal Blog",
 		"favicon": "favicon.ico"
 	},
 	"intro": {
-		"title": "SimonAKing",
+		"title": "ZZX",
 		"subtitle": "Front back left right end engineer",
 		"enter": "enter",
 		"supportAuthor": true,
 		"background": true
 	},
 	"main": {
-		"name": "SimonAKing",
+		"name": "ZZX",
 		"signature": "Code & Input & Output",
 		"avatar": {
 			"link": "assets/avatar.jpg",
@@ -26,17 +26,17 @@
 				"text": "Blog"
 			},
 			"second": {
-				"href": "about/",
+				"href": "about.html",
 				"icon": "xiaolian",
 				"text": "About"
 			},
 			"third": {
-				"href": "mailto:hi@simonaking.com",
+				"href": "email.html",
 				"icon": "email",
 				"text": "Email"
 			},
 			"fourth": {
-				"href": "https://github.com/SimonAKing",
+				"href": "https://github.com/zxidd24",
 				"icon": "github",
 				"text": "Github"
 			}
